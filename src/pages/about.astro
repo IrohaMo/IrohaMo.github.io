@@ -1,21 +1,54 @@
 ---
+const pageTitle = "About me";
+
+const identity = {
+	firstName: "IrohaMo",
+	country: "日本",
+	occupation: "学生",
+	hobbies: ["三味線"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "C"];
 ---
 
-<html lang="en">
+
+<html lang="ja">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content"width=device-width" />
 		<meta name="genarator" content={Astro.genarator} >
-		<title>Astro</title>
+		<title>{pageTitle}</title>
+		<style>
+			h1 {
+				color: purple;
+				font-size: 4rem;
+			}
+			.skill {
+				color: green;
+				font-weight: bold;
+			}
+   		</style>
 	</head>
 	<body>
 		<a href="/">Home</a>
 		<a href="/about/">About</a>
 		<a href="/blog/">Blog</a>
-		<h1>About Me</h1>
+		<h1>{pageTitle}</h1>
 		<h2>... and my new astro site!</h2>
 		<p>I'm doing Astro tutorial. This is the second page for my website.</p>
 		<p>This site is being updated as I continue the tutorial.</p>
 	</body>
+	<p>以下は私に関するいくつかの事実です。</p>
+		<ul>
+			<li>私の名前は{identity.firstName}です。</li>
+			<li>{identity.country}に住んでおり、{identity.occupation}をしています。</li>
+			{identity.hobbies.length >= 2 &&
+				<li>私の2つの趣味は{identity.hobbies[0]}と{identity.hobbies[1]}です。</li>
+			}
+		</ul>
+	<p>私のスキルは以下の通りです。</p>
+	<ul>
+	{skills.map((skill) => <li class="skill">{skill}</li>)}
+	</ul>
 </html>
