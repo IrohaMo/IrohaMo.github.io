@@ -1,0 +1,70 @@
+---
+import CallToAction from './CallToAction.astro';
+import Icon from './Icon.astro';
+---
+
+<aside>
+  <div class="content">
+    <h2>Interested in working together?</h2>
+    <CallToAction href="mailto:me@example.com">
+      Send Me a Message
+      <Icon icon="paper-plane-tilt" size="1.2em" />
+    </CallToAction>
+  </div>
+</aside>
+
+<style>
+  aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ← 高さを中央で揃える */
+    flex-wrap: wrap;
+    gap: 2rem;
+    border-top: 1px solid var(--gray-800);
+    border-bottom: 1px solid var(--gray-800);
+    padding: 5rem 1.5rem;
+    background-color: var(--gray-999_40);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    text-align: left;
+  }
+
+  .socials {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .social {
+    color: var(--accent-dark);
+    font-size: var(--text-2xl);
+    text-decoration: none;
+    transition: color var(--theme-transition);
+  }
+
+  .social:hover,
+  .social:focus {
+    color: var(--accent-text-over);
+  }
+
+  @media (max-width: 50em) {
+    aside {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .content {
+      align-items: center;
+    }
+  }
+</style>
