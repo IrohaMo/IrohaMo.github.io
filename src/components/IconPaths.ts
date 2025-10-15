@@ -11,6 +11,23 @@
  *    (or add `stroke="none"` on shapes with no `fill` or `stroke` specified).
  */
 export const iconPaths = {
+	favicon: `
+	<path 
+	d="M13.043,139.442L64.423,12.957L109.651,12.957L16.187,243.043L13.096,243.043L13.043,139.442ZM242.904,12.957L242.957,116.047L192.307,243.043L147.194,243.043L238.96,12.957L242.904,12.957ZM197.344,12.957L103.881,243.043L58.653,243.043L152.116,12.957L197.344,12.957Z" 
+	fill="none" 
+	stroke="currentColor" 
+	stroke-width="16" 
+	stroke-linecap="round" 
+	stroke-linejoin="round"
+	/>
+	`,
+	'shamisen-icon': `
+	<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+	<path d="M101.656,202.71L77.437,230.318C71.276,237.342 60.571,238.042 53.547,231.881L28.094,209.553C21.07,203.391 20.37,192.687 26.531,185.663L50.75,158.054C56.911,151.03 67.616,150.33 74.64,156.492L100.093,178.819C107.117,184.981 107.817,195.686 101.656,202.71Z"/>
+	<path d="M179.912,75.693L94.077,173.542L80.656,161.769L166.49,63.92L179.912,75.693ZM178.52,29.681C182.005,25.708 192.58,29.277 202.121,37.646C211.661,46.015 216.577,56.035 213.092,60.008C212.472,60.715 182.057,77.133 182.057,77.133L165.584,62.683C165.584,62.683 177.9,30.388 178.52,29.681ZM216.67,101.726L213.082,104.349L192.071,76.955L193.865,75.644L216.67,101.726ZM140.561,24.286L144.48,19.92L170.461,42.645L168.501,44.828L140.561,24.286ZM233.668,82.165L230.7,85.732L205.485,65.571L206.969,63.787L233.668,82.165Z"/>
+	<path d="M62.013,212.148L61.862,212.319L46.406,198.76L46.556,198.589L62.013,212.148Z"/>
+	</g>
+	`,
 	'terminal-window': `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m80 96 40 32-40 32m56 0h40"/><rect width="192" height="160" x="32" y="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.97" rx="8.5"/>`,
 	trophy: `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M56 56v55.1c0 39.7 31.8 72.6 71.5 72.9a72 72 0 0 0 72.5-72V56a8 8 0 0 0-8-8H64a8 8 0 0 0-8 8Zm40 168h64m-32-40v40"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M198.2 128h9.8a32 32 0 0 0 32-32V80a8 8 0 0 0-8-8h-32M58 128H47.9a32 32 0 0 1-32-32V80a8 8 0 0 1 8-8h32"/>`,
 	strategy: `<circle cx="68" cy="188" r="28" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m40 72 40 40m0-40-40 40m136 56 40 40m0-40-40 40M136 80V40h40"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m136 40 16 16c40 40 8 88-24 96"/>`,
